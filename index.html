@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Watson | Unit Conversion</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="outer-wrapper">
+
+        <!--First section with purple backgound-->
+        <div class="main-section">
+        <!--Heading-->
+        <div class="main-header-container">
+            <h2 class="main-header">Metric/Imperial Unit Conversion</h2>
+        </div>
+
+        <!--Where user inputs number to be converted-->
+        <div class="unit-container">
+            <input id="unit-el" type="number" value="1" min="0" max="999">
+        </div>
+
+        <div class="convert-container">
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+
+    <!--Second section-->
+    <div id="sub-section">
+
+        <!--Conversion Box 1-->
+        <div id="conversion-box">
+            <h3 id="conversion-header">Length (Meter/Feet)</h3>
+            <p id="length-el" class="conversion"></p>
+        </div>
+
+        <!--Conversion Box 2-->
+        <div id="conversion-box">
+            <h3 id="conversion-header">Volume (Liters/Gallons)</h3>
+            <p id="volume-el" class="conversion"></p>
+        </div>        
+
+        <!--Conversion Box 3-->
+        <div id="conversion-box">
+            <h3 id="conversion-header">Mass (Kilograms/Pounds)</h3>
+            <p id="mass-el" class="conversion"></p>
+        </div>
+    </div>
+</div>
+
+<div class="copyright-box">
+    <p class="copyright-holder">&copy; Copyright, <a href="https://github.com/JoshLander18" class="holder">Joshua Watson</a></p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
